@@ -140,7 +140,7 @@ console.log(ordenarNumeros(numArray))
 function deleteStudent(array, name) {
     return array.filter(a => a.nombre != name)
 }
-console.log(`el array sin el alumno ${JSON.stringify(deleteStudent(alumnos, 'marcos'))}`)//JSON.stringify, pasa cosas json a string
+console.log(`el array sin el alumno ${JSON.stringify(deleteStudent(alumnos, 'marcos'))}`)//JSON.stringify, pasa objects js a json
 function totalCarrito(array) {
     return array.productos.reduce((a, b) => a + b.precio, 0)
 }
